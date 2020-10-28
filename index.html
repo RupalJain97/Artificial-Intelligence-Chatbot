@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Career Counselling
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap & jQuery -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/da69beb931.js" crossorigin="anonymous"></script>
+
+    <!-- Heroku App -->
+    <script src="https://sleepy-everglades-88740.herokuapp.com/socket.io/socket.io.js"></script>
+
+    <!-- Socket.io -->
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+
+    <!-- Styling -->
+    <link rel="stylesheet" type="text/css" href="styling.css">
+
+</head>
+
+
+<body data-spy="scroll" data-target="#main-nav" id="home">
+
+    <!-- Header Bar -->
+    <div class="container-fluid">
+        <div clas="row" id="main-nav">
+            <div class="col-3">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+                    <a class="navbar-brand navbar-light justify-content-center" href="#">
+                        <i class="fas fa-graduation-cap"></i> Career Counselling
+                    </a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="sidebar" id="main-nav">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#home">
+                                    <i class="fas fa-home"></i> Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Science-Section" class="nav-link">
+                                    <i class="fas fa-atom"></i> Science Section</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Commerce-Section" class="nav-link">
+                                    <i class="fas fa-calculator"></i> Commerce Section</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Arts-Section" class="nav-link">
+                                    <i class="fas fa-paint-brush"></i> Arts Section</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#staff" class="nav-link">
+                                    <i class="fas fa-phone"></i> Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-10">
+                <!-- main body-->
+                <!-- SHOWCASE SLIDER -->
+
+                <section id="showcase">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                        <ol class="carousel-indicators">
+
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                            <li data-target="#myCarousel" data-slide-to="5"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item carousel-image-1 active">
+                                <img class="d-block w-100" src="/images/all.jpeg" alt="Career">
+                            </div>
+
+                            <div class="carousel-item carousel-image-2">
+                                <img class="d-block w-100" src="/images/science.jpg" alt="Career">
+                            </div>
+
+                            <div class="carousel-item carousel-image-3">
+                                <img class="d-block w-100" src="/images/artCom.jpg" alt="Career">
+                            </div>
+
+                            <div class="carousel-item carousel-image-4">
+                                <img class="d-block w-100" src="/images/commerce.jpg" alt="Career">
+                            </div>
+
+                            <div class="carousel-item carousel-image-5">
+                                <img class="d-block w-100" src="/images/art.png" alt="Career">
+                            </div>
+
+                            <div class="carousel-item carousel-image-6">
+                                <img class="d-block w-100" src="/images/career.png" alt="Career">
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide=" prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+
+                    </div>
+
+                </section>
+
+                <div id="text">
+                    <br>
+                    <p>
+                        A <strong><span id="head">Career</strong></span> is an individual's journey through learning, work and other aspects of life. Career is a very important aspect of anyone's life. Choosing a career in a certain stream defines the
+                        future of a student. However, it is difficult for a student to choose a career path at the early age.
+                    </p>
+                    <p>
+                        <span id="bold">Wondering Why to do counseling?.</span><br>
+                        <p>
+                            The world of work is changing all the time and fast. Jobs have emerged that didn't exist five or ten years ago. And the idea that you'd stick with one career for your entire working life has been left in the dust.
+                        </p>
+                        <p>
+                            Choosing a career in a particular stream or profession right at the beginning has a long lasting impact on a student's future. It is very important for any student to choose carefully from various options available to him or her with respect to his or
+                            her interest. In order to achieve success, one has to select the path which they like to walk on. Good judgment and right kind of aptitude coupled with guidance in the right direction to pick up a definite stream helps one
+                            in choosing the right career option. So from the very beginning a student should be careful in making choice of their stream.
+                        </p>
+
+                        <ul>
+                            <li>Helps in determining a student's true potential.</li>
+                            <li>Despite having a clear idea of what they want to achieve in life, some students do not know the career path they need to follow to have the requisite academic qualification to join a particular course.
+                            </li>
+                            <li>A career counselor also provides essential support and boosts the morale of a student by understanding the kind of requirements.</li>
+                        </ul>
+                        <p>
+                            Once people know where they are headed, they mostly become motivated to work hard to realise their goals.
+                        </p>
+                    </p>
+                    <br>
+                    <p class="para">
+                        What after class 10? This is the common question that arise among students after they pass out class 10th board exams. This is infact a more crucial and transition period for students as choosing right stream in right college decides their future. However,
+                        there are numerous options available for students who planning to get ahead in studies, which also promises better career prospects.
+                    </p>
+                </div>
+
+                <div id="div2" class="ml-5 mr-5">
+                    <p class="para">
+                        <strong><em>Puzzeled what to do next?<br>
+                                Want to fulfill your childhood dream?<br>
+                                Here we are. This website will give you a clear
+                                idea and a clear path to fulfill your dream and deciding a suitable career for you.
+                        </strong></em>
+                    </p>
+                    <br>
+                </div>
+
+
+                <!--Science Section-->
+
+                <div id="Science-Section">
+                    <section id="science">
+                        <div class="dark-overlay">
+                            <div class="container pt-5">
+                                <h1>Science</h1>
+                                <p class="d-none d-md-block" style="font-style: italic">
+                                    Science stream is a very popular choice among 10th standard passed students in India. Students who want to pursue pure and applied science professional courses in the future may choose this stream.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- INFO SECTION -->
+
+                    <div id="description" class="row">
+                        <p class="topic">
+                            SCIENCE stream is further classified into two more categories.
+                        </p>
+                        <div class="pts">
+                            <ul>
+                                <li>Medical
+                                </li>
+                                <li>Non-Medical
+                                </li>
+                            </ul>
+                            <h5>Medical</h5>
+                            <p>
+                                To go in medical line, you should choose medical stream. In medical stream you will study Biology, Physics, Chemistry with English and Hindi. Biology is the main subject for medical line. After completing 12th you can sit in the exam of CPMT. After you
+                                crack the CPMT exam you can enter in medical line.
+                            </p>
+                            <br>
+                            <p>
+                                Medical stream has following JOB opportunities:
+                                <ul>
+                                    <li class="list"><em>Physician</em></li>
+                                    <p class="desc">
+                                        A physician diagnosis and treats the daily and miscellaneous illnesses of the human body. MBBS(Bachelor of Medicine Bachelor of Surgery) degree hold ess examinations that are that include one year of internship. People to be selected for MBBS have to
+                                        pass an Entrance Exams such as CPT, PMT conducted by states and some all India level exams such as AIIMS, AFMS and AIPMT for best colleges in country. The prerequisite for entrance is 10+2 equivalent having Science
+                                        subjects. Admission to private medical colleges entrance are determined by examinations that are carries out by the institutions individually. On completing MBBS, candidates are able to opt for post graduate level
+                                        studies (MD / MS) through one more entrance. In the post graduate level, students can specialize in Medicine as well as Surgery. Post Graduate curriculums (MD / MS) are typically of duration of 3 years.
+                                    </p>
+
+                                    <li class="list"><em>Dental Surgeon</em></li>
+                                    <p class="desc">
+                                        Dental surgery is among many medical measures that entail synthetically adjusting dentition, or basically surgery of the teeth as well as jaw bones. A person wishing a career in dentistryought to complete the B.D.S(Bachelor of Dental Surgery) course which
+                                        has duration of 4 years plus internship of 1 year. Applicants for this course ought to have cleared the 2 years Intermediate / corresponding course having Chemistry, Physics, and Biology among their subjects.
+                                    </p>
+
+                                    <li class="list"><em>Optometrists</em></li>
+                                    <p class="desc">
+                                        They are healthcare experts providing most important vision care that includes vision checking and rectification. They might in addition make out eye illnesses and pass on to ophthalmologists for cure. A person choosing a career in medical field as an
+                                        Optometrist ought to complete degree/ diploma courses in ophthalmic know-how. An applicant for this course ought to have passed 10+2 / equivalent exam having at least 50% marks in chemistry, physics, and biology.
+                                    </p>
+
+                                    <li class="list"><em>B.A.M.S</em></li>
+                                    <p class="desc">B.A.M.S (Bachelor of Ayurveda medicine and Surgery) uses natural herbs as medicine also called Ayurvedic medicines to treat any kind of illness. A person wishing to choose a career in ayurvedic medicine can take a step
+                                        in that direction by completing the course of 5.5 years which also include internship.
+                                    </p>
+
+                                    <li class="list"><em>B.U.M.S (Bachelor of Unani medicine and Surgery)</em></li>
+                                    <p class="desc">Unani medicine is a sort of treatment in India that makes use of regimental treatment venasection, Turkish bath, rubdown, work out, employment of herbal, mineral and animal drugs, surgery. A person wishing in a career
+                                        in medical field in unani medicine has to complete B.U.M.S which is an undergraduate degree curriculum in Unani Medicine as well as Surgery. An applicant for B.U.M.S must have cleared Senior Secondary (12th Standard)
+                                        or Inter-mediate exam having the Science subjects among his/her subjects. This course is of duration of 4.5 years and includes three professional exams during its tenure. A person on completing the 3rd Professional
+                                        Exam is qualified to complete a rotatory internship of 12 months in renowned institute hospital.
+                                    </p>
+
+                                    <li class="list"><em>Pharmacist</em></li>
+
+                                    <p cass="desc">A Pharmacist is a health care professional making use of their proficiency in medication to assist people to be aware of the medications that they are having, the way in which they are of help, and how the way they
+                                        react. Pharmacists in addition take part in disease-state administration, optimizing and monitoring the medicine treatment or interpreting medical laboratory outcomes, in partnership with medical doctors and/or
+                                        further wellbeing experts.A person wishing to become a pharmacist should complete the Bachelor of Pharmacy degree which is commonly called B. Pharma. It's a 4 year course having both yearly and semester plans. For
+                                        a person to be eligible for this course he/she must have procured at least 50% marks in passing the 10 + 2 (or its corresponding examination) and must have had biology/mathematics among his/her subjects.
+                                    </p>
+
+                                    <li class="list"><em>Nursing</em></li>
+                                    <p class="desc">This entails the care for various patients having universal medical or surgical requirements. In a lot of ways a general nurses is the sp iern Physics, and Biology among common and also intricate care for patients ranging
+                                        from the very ill, to the ones requiring help with extensive care in this society. A careerin general nursing requires The General Nursing Training Course which is of duration of Three and a half years. Applicants
+                                        for this course ought to have cleared at least the 10+2 board exams having Chemistry, Physics, and Biology among their subjects. It is one of most common careers option in medical field pursued by girls.
+                                    </p>
+                                </ul>
+                            </p>
+
+
+                            <div class="accordion row container" id="cards">
+                                <div class="card" id="sub">
+                                    <div class="card-header" id="cardsHead">
+                                        <h3 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#medicalSub" aria-expanded="true" aria-controls="medicalSub">
+                                                Subjects
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="medicalSub" class="collapse" aria-labelledby="cardsHead" data-parent="accordion">
+                                        <div class="card-body" id="cardsBody">
+                                            <ul>
+                                                <li>Biology (compulsary)</li>
+                                                <li>Chemistry (compulsary)</li>
+                                                <li>Physics (compulsary)</li>
+                                                <li>Maths (optional)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card" id="exams">
+                                    <div class="card-header" id="cardsHead">
+                                        <h3 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#medicalExams" aria-expanded="true" aria-controls="medicalExams">
+                                                Entrance Exams
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="medicalExams" class="collapse" aria-labelledby="cardsHead" data-parent="accordion">
+                                        <div class="card-body" id="cardsBody">
+                                            <ul>
+                                                <li>ARMED FORCES MEDICAL COLLEGE (AFMC ENTRANCE)</li>
+                                                <li>ALL INDIA INSTITUTE OF MEDICAL SCIENCES (AIIMS MBBS)</li>
+                                                <li>ALL INDIA PRE-MEDICAL TEST (AIPMT)</li>
+                                                <li>AIPGMEE - ALL INDIA POST GRADUATE MEDICAL/DENTAL ENTRANCE EXAM</li>
+                                                <li>DELHI UNIVERSITY MEDICAL/DENTAL ENTRANCE TEST (DUMET 2011)</li>
+                                                <li>JAWAHARLAL INSTITUTE OF POST GRADUATE MEDICAL EDUCATION AND RESEARCH (JIPMER)</li>
+                                                <li>MANIPAL UGET KARNATKA</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <h4>Non-Medical</h4>
+                            <p>
+                                Non-medical is a stream related to science in which 3 subjects are most important Physics, Chemistery and Mathematics. Non-medcal is opted by those people who are having interest in science. In a Non-medical stream student becomes an engineer or he can
+                                do business too. Non-medical student can further opt for commerce stream but a commerce student cant opt commerce stream in future.
+                            </p>
+                            <br>
+                            <p>
+                                Non-Medical stream has following JOB opportunities:
+                                <ul>
+                                    <li class="list"><em>Computer Science Engineering </em></li>
+                                    <p class="desc">
+                                        Computer engineering concerns the design and prototyping of computing hardware and software. This subject merges electrical engineering with computer science, and you may prefer to study computer engineering alongside one of these similar subjects. Computer
+                                        engineering specializations overlap with those offered in computer science degrees, for example with subjects such as computer graphics and network security. However, specialized subjects generally unique to computer
+                                        engineering include microprocessor/microcontroller systems, computer architecture and VHDL (hardware description language) design.
+                                    </p>
+
+                                    <li class="list"><em>Electronics and Communication Engineering </em></li>
+                                    <p class="desc">
+                                        Electrical and electronics engineering both focus on applications of electrical power. The two fields differ in that electrical engineers chiefly focus on the large-scale production and supply of electrical power, while electronics engineers focus on
+                                        much smaller electronic circuits, such as those used in computers. Common specializationsof electrical and electronics engineering include power generation and supply, communications and media, computer systems
+                                        and robotic systems.
+                                    </p>
+
+                                    <li class="list"><em>Mechanical Engineering </em></li>
+                                    <p class="desc">
+                                        Mechanical engineering is one of the oldest and broadest types of engineering, mechanical engineering is concerned with the design, manufacturing and maintenance of mechanical systems. You’ll study statics and dynamics, thermodynamics, fluid dynamics,
+                                        stress analysis, mechanical design and technical drawing. Common specializations of mechanical engineering include manufacturing, transportation systems, combustion, nanotechnology and robotics.
+                                    </p>
+
+                                    <li class="list"><em>Aerospace Engineering </em></li>
+                                    <p class="desc">
+                                        Aerospace Engineering deals with the research, design, development, construction, testing, science and technology of aircraft. You could also study astronautical engineering, focusing on spacecraft and the deep conditions of space. Common specializations
+                                        of aeronautical engineering include aerodynamics, aeroelasticity, composites analysis, avionics, propulsion and structures and materials.
+                                    </p>
+
+                                    <li class="list"><em>Chemnial Engineering </em></li>
+                                    <p class="desc">
+                                        Chemnial Engineering concerns the use of chemical and biological processes to produce useful materials or substances. It’s a multidisciplinary subject, combining natural and experimental sciences (such as chemistry and physics), along with life sciences
+                                        (such as biology, microbiology and biochemistry), plus mathematics and economics. Common specializations of chemical engineering include chemical reaction engineering, plant design, process engineering, process
+                                        design or transport phenomena.
+                                    </p>
+
+                                    <li class="list"><em>Civil Engineering </em></li>
+                                    <p class="desc">
+                                        Civil engineering is the professional practice of designing and developing infrastructure projects. This can be on a huge scale, such as the development of nationwide transport systems or water supply networks, or on a smaller scale, such as the development
+                                        of single roads or buildings. Common specializations of civil engineering include structural, architectural, transportation, geotechnical, environmental and hydraulic engineering.
+                                    </p>
+
+                                    <li class="list"><em>Architectural Engineering </em></li>
+                                    <p class="desc">
+                                        Architectural engineers apply science and technology to the real world by designing buildings that enhance our standard of living and improve our quality of life. They do this by combining building systems – structural, electrical, mechanical, lighting,
+                                        acoustics and fire protection - into an integrated whole. Common specializations of architectural engineering include construction engineering, MEP systems, structural engineering, electrical & illumination, acoutics
+                                        & illumination, fire protection & life safety and building mechanical & energy.
+                                    </p>
+                                </ul>
+                            </p>
+
+                            <div class="accordion row container" id="cards">
+                                <div class="card" id="sub">
+                                    <div class="card-header" id="cardsHead">
+                                        <h3 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#nonmedSub" aria-expanded="false" aria-controls="nonmedSub">
+                                                Subjects
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="nonmedSub" class="collapse" aria-labelledby="cardsHead" data-parent="accordion">
+                                        <div class="card-body" id="cardsBody">
+                                            <ul>
+                                                <li>Chemistry (compulsary)</li>
+                                                <li>Physics (compulsary)</li>
+                                                <li>Mathematics (compulsary)</li>
+                                                <li>Computer Science (optional)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card" id="exams">
+                                    <div class="card-header" id="cardsHead">
+                                        <h3 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#nonmedExams" aria-expanded="false" aria-controls="nonmedExams">
+                                                Entrance Exams
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="nonmedExams" class="collapse" aria-labelledby="cardsHead" data-parent="accordion">
+                                        <div class="card-body" id="cardsBody">
+                                            <ul>
+                                                <li>JEE Main</li>
+                                                <li>JEE Advanced</li>
+                                                <li>BITSAT</li>
+                                                <li>VITEEE</li>
+                                                <li>NATA (for architecture)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+                    </div>
+                </div>
+
+
+                <!--commerce section-->
+
+                <div id="Commerce-Section">
+                    <section id="commerce">
+                        <div class="dark-overlay">
+                            <div class="container pt-5">
+                                <h1>Commerce</h1>
+                                <p class="d-none d-md-block" style="font-style: italic">
+                                    Commerce course covers basically accounting, economics and related subjects relevant to trade and business. Commerce is a stream which has been considered as the ladder to a corporate and business world. The subjects taught in the stream have a direct
+                                    relation with the finance and economic aspects.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- INFO SECTION -->
+
+                    <div id="description" class="row">
+                        <div class="pts">
+                            <p>
+                                Commerce stream has following JOB opportunities:
+                                <ul>
+                                    <li class="list"><em>Chartered Accountant</em></li>
+                                    <p class="desc">
+                                        A Chartered Accountant (CA) is responsible for the financial efficiency of a company or their client.
+                                    </p>
+
+                                    <li class="list"><em>Company Secretary</em></li>
+                                    <p class="desc">
+                                        A CS acts as a link between the company and other concerned parties.
+                                    </p>
+
+                                    <li class="list"><em>Banking</em></li>
+                                    <p class="desc">
+                                        Banking sector holds a lot of lucrative job opportunities for the commerce students. It is among the most hardcore commerce fields
+                                    </p>
+
+                                    <li class="list"><em>Tax Consultant</em></li>
+                                    <p class="desc">
+                                        Tax consultants or tax advisers are the individuals who have expertise in tax law. A commerce graduate with necessary skills and tax knowledge can either work with a firm or can work as an individual.
+                                    </p>
+
+                                    <li class="list"><em>Cost & work Accountant</em></li>
+                                    <p class="desc">
+                                        These professionals deal with budgeting, cost & asset management, and performance evaluation within a company or an organisation.
+                                    </p>
+
+                                    <li class="list"><em>Actuary</em></li>
+                                    <p class="desc">
+                                        An actuary is like a future predictor of a company or an organisation.They deal with making the balance between the design and price of the product. They predict & evaluate the future events and their impact on the financial status of an organisation.
+                                    </p>
+                                </ul>
+                            </p>
+
+                            <div class="accordion row container" id="cards">
+                                <div class="card" id="sub">
+                                    <div class="card-header" id="cardsHead">
+                                        <h3 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#commerceSub" aria-expanded="false" aria-controls="commerceSub">
+                                                Subjects
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="commerceSub" class="collapse" aria-labelledby="cardsHead" data-parent="accordion">
+                                        <div class="card-body" id="cardsBody">
+                                            <ul>
+                                                <li>Business Studies/Organisation of Commerce</li>
+                                                <li>Information Practices Statistics (compulsary)</li>
+                                                <li>Economics (compulsary)</li>
+                                                <li>Accounts (compulsary)</li>
+                                                <li>Maths (optional)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card" id="exams">
+                                    <div class="card-header" id="cardsHead">
+                                        <h3 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#commerceExams" aria-expanded="false" aria-controls="commerceExams">
+                                                Entrance Exams
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="commerceExams" class="collapse" aria-labelledby="cardsHead" data-parent="accordion">
+                                        <div class="card-body" id="cardsBody">
+                                            <ul>
+                                                <li>UPSEE</li>
+                                                <li>IPU CET</li>
+                                                <li>SET</li>
+                                                <li>CPT</li>
+                                                <li>CFA</li>
+                                                <li>BHU UET</li>
+                                                <li>ITLA</li>
+                                                <li>AMU Law Entrance Test</li>
+                                                <li>Indian Defence Entrance Examination</li>
+                                                <li>LSAT</li>
+                                                <li>CLAT</li>
+                                                <li>AILET</li>
+                                                <li>Xavier's Entrance Test</li>
+                                                <li>B-UMAT</li>
+                                                <li>UGAT-AIMA</li>
+                                                <li>Christ University BBA Entrance Exam</li>
+                                                <li>AUMAT</li>
+                                                <li>KCET</li>
+                                                <li>AIL Entrance Test</li>
+                                                <li>NPAT</li>
+                                                <li>HSEE</li>
+                                                <li>TS LAWCET</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+
+                </div>
+
+
+                <!--arts section-->
+
+                <div id="Arts-Section">
+                    <section id="arts">
+                        <div class="dark-overlay">
+                            <div class="container pt-5">
+                                <h1>Arts</h1>
+                                <p class="d-none d-md-block" style="font-style: italic">
+                                    Arts stream involves the study of subjects like Literature, Languages, Geography, Political science, History etc. Career options and otunities in Arts stream are endless.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- INFO SECTION -->
+
+                    <div id="description" class="row">
+                        <div class="pts">
+                            <p>
+                                Arts stream has following JOB opportunities:
+                                <ul>
+                                    <li class="list"><em>Acting and Modeling</em></li>
+
+                                    <p class="desc">
+                                        The modeling and acting industry can be a rewarding field if the person has the talent,creativity and the luck to win several hearts. There are many modeling institutes as well as the acting schools in country which especially train the aspiring models
+                                        and actors under the guidance of renowned industry expert. Salary is entirely dependent on the name and fame earned in the industry.
+                                    </p>
+
+                                    <li class="list"><em>Animator and Graphic Design Artists</em></li>
+
+                                    <p class="desc">
+                                        Both the profession requires expertise in understanding art of drawing and designing as well as the technical knowledge of designing software.
+                                    </p>
+
+                                    <li class="list"><em>Audio Visual Media Professionals (Radio Jockeys / Voice Over Artists)</em></li>
+                                    <p class="desc">
+                                        This requires training and learning from institutes which specialize in the field.These professions require person to be talkative creative and have dynamic voice as well as personality.With the opening of new radio channels these people are in great
+                                        demand. They are paid handsome ranging from 50k-1l per month depending upon ability and experience.
+                                    </p>
+
+                                    <li class="list"><em>Journalism</em></li>
+                                    <p class="desc">
+                                        Journalism is a profession related to the reporting of facts and figures. With the increase in private channels and mediums of communication, the journalist can earn a living by freelancing too. The career opportunities are available in variety of mediums
+                                        like that of broadcast media, print media, interactive media and many more. It is one of the highest paying career options in the field of arts. The salary is entirely dependent on the organization and the post.
+                                    </p>
+
+                                    <li class="list"><em>Hotel Management and Hospitality</em></li>
+                                    <p class="desc">
+                                        The stream of arts train the officials in effective communication skills and many more skills. The career options available are that of a receptionist, housekeeper,account man, sales officer and of marketing in the hotel industry. The job demands that
+                                        the person should be humble and soft-spoken. The average salary in the field can range between 45-70 thousand a month. It is expected to increase as per the experience of the candidate.
+                                    </p>
+
+                                    <li class="list"><em>Fashion Designing</em></li>
+                                    <p class="desc">
+                                        One can make a career in the field of fashion designing if he is creative enough and have passion for designing clothing collections. The opportunities are vast and completely depend on the talent of the individual.
+                                    </p>
+
+                                    <li class="list"><em>IAS Officer</em></li>
+                                    <p class="desc">
+                                        The IAS officers hold an important position in the Union Government. Recruitment is made on the basis of the marks oin x can range from 13-14 lakhs Students who have a grduate degree can polish their knowledge in some of the subjects which are similar
+                                        to the prescribed syllabus in the examination. The student will develop a keen knowledge in the subject of political science, sociology,law, literature, economics which are taught in the stream of arts. Highest
+                                        Salary in the field can range from 13-14 lakhs per annum. It's a government job and it involves other perks as well
+                                    </p>
+
+                                    <li class="list"><em>Lawyer</em></li>
+                                    <p class="desc">
+                                        A person in the field of law should be qualified with a specialized degree in law. The stream of arts can be very helpful in shaping the knowledge related to the political,economical and social conditions in a nation which helps a lawyer in studying and
+                                        understanding the cases. According to the Patna High court, the average salary of a lawyer can be around 7 lakhs per annum. It is also dependent on the years of experience gained in the field of law.
+                                    </p>
+                                </ul>
+                            </p>
+
+                            <div class="accordion row container" id="cards">
+                                <div class="card" id="sub">
+                                    <div class="card-header" id="cardsHead">
+                                        <h3 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#artSub" aria-expanded="false" aria-controls="artSub">
+                                                Subjects
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="artSub" class="collapse" aria-labelledby="cardsHead" data-parent="accordion">
+                                        <div class="card-body" id="cardsBody">
+                                            <ul>
+                                                <li>English</li>
+                                                <li>History</li>
+                                                <li>Geography</li>
+                                                <li>Political Science</li>
+                                                <li>Economics</li>
+                                                <li>Psychology (optional)</li>
+                                                <li>Physical Education</li>
+                                                <li>Public Administration</li>
+                                                <li>Mathematics (optional)</li>
+                                                <li>Computer Science (optional)</li>
+                                                <li>Sociology</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card" id="exams">
+                                    <div class="card-header" id="cardsHead">
+                                        <h3 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#artsExams" aria-expanded="false" aria-controls="artsExams">
+                                                Entrance Exams
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="artsExams" class="collapse" aria-labelledby="cardsHead" data-parent="accordion">
+                                        <div class="card-body" id="cardsBody">
+                                            <ul>
+                                                <li>IIT HSEE</li>
+                                                <li>TISS BAT</li>
+                                                <li>TISS NET</li>
+                                                <li>DU DSE</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <br>
+                    </div>
+
+                </div>
+
+                <!-- STAFFFFFFFF-->
+
+                <section id="staff">
+                    <div class="dark-overlay">
+                        <div class="container pt-5">
+                            <h2 style="font-family: Algerian">Our Counsellors</h2>
+                            <hr>
+                            <p class="d-none d-md-block" style="font-style: italic">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <!-- <img src="img/person1.jpg" alt="" class="img-fluid rounded-circle mb-2"> -->
+                                        <h4>Jane Doe</h4>
+                                        <small>Marketing Manager</small>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <!-- <img src="img/person2.jpg" alt="" class="img-fluid rounded-circle mb-2"> -->
+                                        <h4>Sara Williams</h4>
+                                        <small>Business Manager</small>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <!-- <img src="img/person3.jpg" alt="" class="img-fluid rounded-circle mb-2"> -->
+                                        <h4>John Doe</h4>
+                                        <small>CEO</small>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <!-- <img src="img/person4.jpg" alt="" class="img-fluid rounded-circle mb-2"> -->
+                                        <h4>Steve Smith</h4>
+                                        <small>IT Developer</small>
+                                    </div>
+                                </div>
+                            </p>
+
+                            <hr>
+                            <p id="footer">
+                                You can contact us via email at
+                                <a href="mailto:rupaljain157@gmail.com ">rupaljain157@gmail.com</a>
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js " integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin=" anonymous "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous ">
+    </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T " crossorigin="anonymous ">
+    </script>
+
+</body>
+
+</html>
