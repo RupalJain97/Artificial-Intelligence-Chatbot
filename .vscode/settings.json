@@ -1,0 +1,4 @@
+{
+    "editor.autoIndent": "brackets",
+    "html.format.contentUnformatted": "pre,code,textarea"
+}

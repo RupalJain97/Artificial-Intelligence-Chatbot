@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Extra file
+New Text Document.txt
+front.html
