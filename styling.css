@@ -1,6 +1,7 @@
 @media screen and (min-width: 48em) {
     body {
         text-align: justify;
+        background-color: rgb(238, 240, 239);
     }
 }
 
@@ -9,22 +10,18 @@ html {
 }
 
 .navbar {
-    /* border-bottom: rgb(181, 4, 181) 3px solid; */
-    border-bottom: rgb(220, 94, 149) 3px solid;
-    /* background-color: rgb(75, 4, 75); */
-    background-color: rgb(46, 4, 23) !important;
+    border-bottom: rgb(10, 169, 243) 3px solid;
+    background-color: rgb(39, 39, 39) !important;
     padding-left: 50px;
 }
 
 .navbar-dark .navbar-brand {
-    /* color: rgb(245, 209, 245) !important; */
-    color: rgb(220, 94, 149) !important;
+    color: rgb(216, 219, 218) !important;
     font-family: cursive;
 }
 
 .sidebar {
-    /* border-right: rgb(181, 4, 181) 3px solid; */
-    border-right: rgb(220, 94, 149) 3px solid;
+    border-right: rgb(10, 169, 243) 3px solid;
     position: fixed;
     height: 100%;
     width: 220px;
@@ -32,13 +29,11 @@ html {
     left: 0;
     padding-top: 20px;
     padding-left: 20px;
-    /* background-color: rgb(238, 201, 238); */
-    background-color: rgb(238, 194, 214);
+    background-color: rgb(177, 180, 179);
 }
 
 .sidebar .nav-link {
-    /* color: rgb(39, 3, 39); */
-    color: rgb(46, 4, 23);
+    color: rgb(1, 37, 54);
     font-family: Pristina;
     font-weight: 600;
     font-size: 20px;
@@ -54,16 +49,18 @@ p {
 
 .col-3 {
     width: 220px;
+    background-color: rgb(238, 240, 239);
 }
 
 .col-10 {
     margin-left: 225px !important;
     margin-top: 70px;
+    background-color: rgb(238, 240, 239);
 }
 
-.myCarousel {
-    /* background-color: #616f7e; */
-    background-color: rgb(232, 177, 203);
+.carousel {
+    border-radius: 10px 10px 10px 10px !important;
+    overflow: hidden;
 }
 
 .carousel-item img {
@@ -73,21 +70,21 @@ p {
 
 .carousel .carousel-indicators li {
     height: 5px;
-    border-radius: 30%;
+    border-radius: 12px !important;
 }
 
 #head {
     font-weight: bolder;
     font-size: 23px;
     font-family: Comic Sans MS;
-    color: rgb(220, 94, 149)
+    color: rgb(83, 85, 84);
 }
 
 #bold {
     font-weight: bolder;
-    font-size: 28px;
-    text-shadow: 2px 2px black;
-    color: rgb(220, 94, 149);
+    font-size: 25px;
+    text-shadow: 2px 2px rgb(118, 212, 255);
+    color: rgb(72, 75, 74);
 }
 
 #text {
@@ -114,6 +111,7 @@ p {
 .accordion div.card {
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: calc(0.25rem - 1px);
+    background-color: rgb(238, 240, 239);
 }
 
 #cards {
@@ -140,10 +138,12 @@ p {
     font-size: 16px;
     font-style: italic;
     border-radius: 10px;
+    background-color: rgb(238, 240, 239);
 }
 
 #cardsBody ul {
     margin: 0px;
+    background-color: rgb(238, 240, 239);
 }
 
 #sub {
@@ -171,7 +171,7 @@ p {
     background-attachment: fixed;
     background-repeat: no-repeat;
     text-align: center;
-    color: rgb(238, 194, 214);
+    color: rgb(181, 232, 255);
     margin: 5px;
     padding: 5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -196,7 +196,7 @@ p {
     background-attachment: fixed;
     background-repeat: no-repeat;
     text-align: center;
-    color: rgb(238, 194, 214);
+    color: rgb(181, 232, 255);
     margin: 5px;
     padding: 5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -209,7 +209,7 @@ p {
     background-attachment: fixed;
     background-repeat: no-repeat;
     text-align: center;
-    color: rgb(238, 194, 214);
+    color: rgb(181, 232, 255);
     margin: 5px;
     padding: 5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -222,7 +222,7 @@ p {
     background-attachment: fixed;
     background-repeat: no-repeat;
     text-align: center;
-    color: rgb(238, 194, 214);
+    color: rgb(181, 232, 255);
     margin: 5px;
     padding: 5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -231,6 +231,11 @@ p {
 #footer {
     text-align: left;
     color: black;
+    font-size: 16px;
+    font-style: italic;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    text-align: justify;
 }
 
 .dark-overlay {
