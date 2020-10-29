@@ -21,7 +21,7 @@
     <script src="http://localhost:3000/socket.io/socket.io.js"></script>
 
     <!-- Styling -->
-    <link rel="stylesheet" type="text/css" href="styling.css">
+    <link rel="stylesheet" type="text/css" href="css/styling.css">
 
 </head>
 
@@ -699,6 +699,38 @@
                         </div>
                     </div>
                 </section>
+
+                <!--chat bot -->
+
+                <div class="col-md-3 offset-md-9 col-sm-2 offset-sm-10 fixed-bottom" id="customer-support">
+                    <div class="panel panel-group panel-default" role="tablist">
+                        <div class="panel-heading text-center" data-toggle="collapse" href="#chatbox">
+                            <p>
+                                Assistant Cary
+                                <i class="fas fa-comments" style="color: rgb(10, 169, 243) !important;"></i>
+                            </p>
+                        </div>
+                        <div class="panel-collapse collapse" id="chatbox">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12" id="output"></div>
+                                    <div class="col-12" id="typing"></div>
+                                </div>
+                                <div class="row flex-column" id="typingMsg">
+                                    <div id="message">
+                                        <input id="handle" type="text" placeholder="Type Message here... ">
+                                    </div>
+                                    <div id="send">
+                                        <button class="btn" id="submit">
+                                            <i class="fas fa-hand-point-right fa-lg"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
         </div>

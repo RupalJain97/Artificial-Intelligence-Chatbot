@@ -36,7 +36,7 @@ html {
     color: rgb(1, 37, 54);
     font-family: Pristina;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .row {
@@ -247,39 +247,36 @@ p {
     background: rgba(0, 0, 0, 0.7);
 }
 
-#message,
-#handle {
-    width: 82%;
-    height: 40px;
-    margin-top: 2px;
-}
-
-.panel-collapse {
-    border: 1px solid rgb(180, 179, 179);
-    padding: 1px;
-    height: 350px;
+.panel {
+    border: rgb(10, 169, 243) 2px solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .panel-heading {
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-}
-
-.heading {
-    font-family: 'Comic Sans MS';
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: rgb(216, 219, 218);
+    font-family: cursive;
     font-style: italic;
-    text-shadow: 1px 1px 1px;
+    font-weight: bold;
     font-size: 20px;
     padding: 4px;
     margin: 0px;
+    background-color: rgb(39, 39, 39);
 }
 
-.container-fluid {
+.panel-collapse {
     padding: 0px;
-    height: 350px;
+    border-top: rgb(10, 169, 243) 2px solid;
 }
 
-.c-12 {
+.container {
+    padding: 0px;
+    /* height: 350px; */
+}
+
+.col-12 {
     padding: 2px !important;
     margin: 1px;
     margin-left: 0px;
@@ -290,8 +287,66 @@ p {
     padding: 2px;
     margin: 0px;
     width: 100%;
-    height: 300px;
-    background-color: #343A40;
+    height: 290px;
+    background-color: rgb(177, 180, 179);
     overflow-y: auto;
     overflow-x: auto;
+    border-left: rgb(10, 169, 243) 1px solid;
+    border-right: rgb(10, 169, 243) 1px solid;
+}
+
+#typing {
+    padding: 2px;
+    margin: 0px;
+    height: 15px;
+    background-color: rgb(177, 180, 179);
+    border-left: rgb(10, 169, 243) 1px solid;
+    border-right: rgb(10, 169, 243) 1px solid;
+}
+
+#typingMsg {
+    background-color: rgb(39, 39, 39);
+    border-top: rgb(10, 169, 243) 2px solid;
+    height: 40px;
+    justify-content: space-around;
+}
+
+#message {
+    padding: 0px;
+    margin: 5px;
+    margin-right: 5px;
+    border: rgb(216, 219, 218) 2px solid;
+    border-radius: 5px;
+    width: 253px;
+}
+
+#message input {
+    padding: 0px;
+    padding-left: 4px;
+    border: 0px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: rgb(216, 219, 218);
+}
+
+input[type=text]:focus {
+    outline: rgb(216, 219, 218);
+}
+
+#send {
+    padding: 0px;
+    margin: 5px;
+    margin-left: 0px;
+    border: rgb(216, 219, 218) 1px solid;
+    border-radius: 5px;
+    background-color: rgb(216, 219, 218);
+    width: min-content;
+}
+
+#send button {
+    color: rgb(10, 169, 243);
+    padding: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 0px;
 }
