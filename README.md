@@ -14,3 +14,11 @@ Students can chat with our online assistant 'Cary' using a chatbot just by sayin
 build a version control project using Git and GitHub from within the Brackets text editor.
 This repository is intended to be used with the accompanying documentation [practicalseries Git and GitHub](http://practicalseries.com/0021-git-vcs/index.html "Practical Series - Git and GitHub").
   -->
+
+
+<!-- 
+### Download Google Cloud SDK using following command:
+
+(New-Object Net.WebClient).DownloadFile("https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe", "$env:Temp\GoogleCloudSDKInstaller.exe") & $env:Temp\GoogleCloudSDKInstaller.exe
+
+ -->

@@ -17,6 +17,9 @@
     <!-- Heroku App -->
     <script src="https://sleepy-everglades-88740.herokuapp.com/socket.io/socket.io.js"></script>
 
+    <!-- Require Lib -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js"></script> -->
+
     <!-- Socket.io -->
     <script src="http://localhost:3000/socket.io/socket.io.js"></script>
 
@@ -33,6 +36,8 @@
         <div clas="row" id="main-nav">
             <div class="col-3">
                 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+
+                    <!-- Navbar Header -->
                     <a class="navbar-brand navbar-light justify-content-center" href="#">
                         <i class="fas fa-graduation-cap"></i> Career Counselling
                     </a>
@@ -40,6 +45,26 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
+                    <!-- Enter Name -->
+                    <!-- <div class="modal fade" id="popup" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Hello! Please enter your name...</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <p id="error"></p>
+                                    <input id="user_name" class="form-control" type="text" placeholder="Enter your name here...">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" id="popup_submit" class="btn btn-primary" onclick="popup_func()">Submit</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- Sidebar -->
                     <div class="sidebar" id="main-nav">
                         <ul class="nav flex-column">
                             <li class="nav-item">
@@ -226,29 +251,32 @@
                                     </p>
 
                                     <li class="list"><em>B.A.M.S</em></li>
-                                    <p class="desc">B.A.M.S (Bachelor of Ayurveda medicine and Surgery) uses natural herbs as medicine also called Ayurvedic medicines to treat any kind of illness. A person wishing to choose a career in ayurvedic medicine can take a step
-                                        in that direction by completing the course of 5.5 years which also include internship.
+                                    <p class="desc">
+                                        B.A.M.S (Bachelor of Ayurveda medicine and Surgery) uses natural herbs as medicine also called Ayurvedic medicines to treat any kind of illness. A person wishing to choose a career in ayurvedic medicine can take a step in that direction by completing
+                                        the course of 5.5 years which also include internship.
                                     </p>
 
                                     <li class="list"><em>B.U.M.S (Bachelor of Unani medicine and Surgery)</em></li>
-                                    <p class="desc">Unani medicine is a sort of treatment in India that makes use of regimental treatment venasection, Turkish bath, rubdown, work out, employment of herbal, mineral and animal drugs, surgery. A person wishing in a career
-                                        in medical field in unani medicine has to complete B.U.M.S which is an undergraduate degree curriculum in Unani Medicine as well as Surgery. An applicant for B.U.M.S must have cleared Senior Secondary (12th Standard)
-                                        or Inter-mediate exam having the Science subjects among his/her subjects. This course is of duration of 4.5 years and includes three professional exams during its tenure. A person on completing the 3rd Professional
-                                        Exam is qualified to complete a rotatory internship of 12 months in renowned institute hospital.
+                                    <p class="desc">
+                                        Unani medicine is a sort of treatment in India that makes use of regimental treatment venasection, Turkish bath, rubdown, work out, employment of herbal, mineral and animal drugs, surgery. A person wishing in a career in medical field in unani medicine
+                                        has to complete B.U.M.S which is an undergraduate degree curriculum in Unani Medicine as well as Surgery. An applicant for B.U.M.S must have cleared Senior Secondary (12th Standard) or Inter-mediate exam having
+                                        the Science subjects among his/her subjects. This course is of duration of 4.5 years and includes three professional exams during its tenure. A person on completing the 3rd Professional Exam is qualified to complete
+                                        a rotatory internship of 12 months in renowned institute hospital.
                                     </p>
 
                                     <li class="list"><em>Pharmacist</em></li>
-
-                                    <p cass="desc">A Pharmacist is a health care professional making use of their proficiency in medication to assist people to be aware of the medications that they are having, the way in which they are of help, and how the way they
-                                        react. Pharmacists in addition take part in disease-state administration, optimizing and monitoring the medicine treatment or interpreting medical laboratory outcomes, in partnership with medical doctors and/or
-                                        further wellbeing experts.A person wishing to become a pharmacist should complete the Bachelor of Pharmacy degree which is commonly called B. Pharma. It's a 4 year course having both yearly and semester plans. For
-                                        a person to be eligible for this course he/she must have procured at least 50% marks in passing the 10 + 2 (or its corresponding examination) and must have had biology/mathematics among his/her subjects.
+                                    <p cass="desc">
+                                        A Pharmacist is a health care professional making use of their proficiency in medication to assist people to be aware of the medications that they are having, the way in which they are of help, and how the way they react. Pharmacists in addition take
+                                        part in disease-state administration, optimizing and monitoring the medicine treatment or interpreting medical laboratory outcomes, in partnership with medical doctors and/or further wellbeing experts.A person wishing
+                                        to become a pharmacist should complete the Bachelor of Pharmacy degree which is commonly called B. Pharma. It's a 4 year course having both yearly and semester plans. For a person to be eligible for this course
+                                        he/she must have procured at least 50% marks in passing the 10 + 2 (or its corresponding examination) and must have had biology/mathematics among his/her subjects.
                                     </p>
 
                                     <li class="list"><em>Nursing</em></li>
-                                    <p class="desc">This entails the care for various patients having universal medical or surgical requirements. In a lot of ways a general nurses is the sp iern Physics, and Biology among common and also intricate care for patients ranging
-                                        from the very ill, to the ones requiring help with extensive care in this society. A careerin general nursing requires The General Nursing Training Course which is of duration of Three and a half years. Applicants
-                                        for this course ought to have cleared at least the 10+2 board exams having Chemistry, Physics, and Biology among their subjects. It is one of most common careers option in medical field pursued by girls.
+                                    <p class="desc">
+                                        This entails the care for various patients having universal medical or surgical requirements. In a lot of ways a general nurses is the sp iern Physics, and Biology among common and also intricate care for patients ranging from the very ill, to the ones
+                                        requiring help with extensive care in this society. A careerin general nursing requires The General Nursing Training Course which is of duration of Three and a half years. Applicants for this course ought to have
+                                        cleared at least the 10+2 board exams having Chemistry, Physics, and Biology among their subjects. It is one of most common careers option in medical field pursued by girls.
                                     </p>
                                 </ul>
                             </p>
@@ -336,9 +364,9 @@
                                         of aeronautical engineering include aerodynamics, aeroelasticity, composites analysis, avionics, propulsion and structures and materials.
                                     </p>
 
-                                    <li class="list"><em>Chemnial Engineering </em></li>
+                                    <li class="list"><em>Chemical Engineering </em></li>
                                     <p class="desc">
-                                        Chemnial Engineering concerns the use of chemical and biological processes to produce useful materials or substances. It’s a multidisciplinary subject, combining natural and experimental sciences (such as chemistry and physics), along with life sciences
+                                        Chemical Engineering concerns the use of chemical and biological processes to produce useful materials or substances. It’s a multidisciplinary subject, combining natural and experimental sciences (such as chemistry and physics), along with life sciences
                                         (such as biology, microbiology and biochemistry), plus mathematics and economics. Common specializations of chemical engineering include chemical reaction engineering, plant design, process engineering, process
                                         design or transport phenomena.
                                     </p>
@@ -665,25 +693,21 @@
                             <p class="d-none d-md-block">
                                 <div class="row" style="font-style: italic">
                                     <div class="col-md-3">
-                                        <!-- <img src="img/person1.jpg" alt="" class="img-fluid rounded-circle mb-2"> -->
                                         <h4>Jane Doe</h4>
                                         <small>Marketing Manager</small>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <!-- <img src="img/person2.jpg" alt="" class="img-fluid rounded-circle mb-2"> -->
                                         <h4>Sara Williams</h4>
                                         <small>Business Manager</small>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <!-- <img src="img/person3.jpg" alt="" class="img-fluid rounded-circle mb-2"> -->
                                         <h4>John Doe</h4>
                                         <small>CEO</small>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <!-- <img src="img/person4.jpg" alt="" class="img-fluid rounded-circle mb-2"> -->
                                         <h4>Steve Smith</h4>
                                         <small>IT Developer</small>
                                     </div>
@@ -744,6 +768,10 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T " crossorigin="anonymous ">
     </script>
+
+    <!-- JavaScript Files -->
+    <script src="src/index.js"></script>
+    <script src="src/app.js"></script>
 
 </body>
 

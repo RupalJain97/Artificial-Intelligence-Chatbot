@@ -1,24 +1,33 @@
 {
-  "name": "student-support-system",
-  "version": "1.0.0",
-  "description": "Student Support System",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Rupal",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RupalJain97/Student-Support-System.git"
-  },
-  "bugs": {
-    "url": "https://github.com/RupalJain97/Student-Support-System/issues"
-  },
-  "homepage": "https://github.com/RupalJain97/Student-Support-System#readme",
-  "dependencies": {
-    "all": "0.0.0",
-    "bootstrap": "^4.0.0-alpha.6",
-    "express": "^4.17.1"
-  }
+    "name": "student-support-system",
+    "version": "1.0.0",
+    "description": "Student Support System",
+    "main": "src/app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node src/app.js"
+    },
+    "author": "Rupal",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/RupalJain97/Student-Support-System.git"
+    },
+    "bugs": {
+        "url": "https://github.com/RupalJain97/Student-Support-System/issues"
+    },
+    "homepage": "https://github.com/RupalJain97/Student-Support-System#readme",
+    "dependencies": {
+        "all": "0.0.0",
+        "bootstrap": "^4.0.0-alpha.6",
+        "dialogflow": "^4.0.3",
+        "express": "^4.17.1",
+        "node": "^15.0.1",
+        "nodemailer": "^6.4.14",
+        "raphael": "^2.3.0",
+        "require": "^2.4.20",
+        "socket.io": "^2.3.0",
+        "uglify-js": "^3.11.4",
+        "uuid": "^8.3.1"
+    }
 }
