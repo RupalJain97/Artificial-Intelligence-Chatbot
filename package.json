@@ -5,7 +5,8 @@
     "main": "src/app.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node src/app.js"
+        "start": "node app.js",
+        "debug": "nodemon --inspect app.js"
     },
     "author": "Rupal",
     "license": "ISC",
@@ -20,10 +21,11 @@
     "dependencies": {
         "all": "0.0.0",
         "bootstrap": "^4.0.0-alpha.6",
-        "dialogflow": "^4.0.3",
+        "dialogflow": "^1.2.0",
         "express": "^4.17.1",
         "node": "^15.0.1",
         "nodemailer": "^6.4.14",
+        "nodemon": "^2.0.6",
         "raphael": "^2.3.0",
         "require": "^2.4.20",
         "socket.io": "^2.3.0",

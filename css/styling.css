@@ -20,6 +20,17 @@ html {
     font-family: cursive;
 }
 
+.modal-backdrop {
+    z-index: -1;
+}
+
+#userName {
+    color: rgb(216, 219, 218) !important;
+    font-family: cursive;
+    margin-right: 10px;
+    font-size: larger;
+}
+
 .sidebar {
     border-right: rgb(10, 169, 243) 3px solid;
     position: fixed;
@@ -309,6 +320,36 @@ p {
     border-top: rgb(10, 169, 243) 2px solid;
     height: 40px;
     justify-content: space-around;
+}
+
+#user_msg {
+    font-style: italic;
+    font-weight: 500;
+    font-size: small;
+    width: fit-content;
+    border: rgb(216, 219, 218) 2px solid;
+    border-radius: 5px 1px 5px 5px;
+    padding: 5px;
+    margin-bottom: 4px !important;
+    justify-content: right;
+    margin-right: 5px !important;
+    margin-left: 100% !important;
+    float: right;
+}
+
+#bot_msg {
+    font-style: italic;
+    font-weight: 500;
+    font-size: small;
+    width: fit-content;
+    border: rgb(216, 219, 218) 2px solid;
+    border-radius: 1px 5px 5px 5px;
+    padding: 5px;
+    margin-bottom: 4px !important;
+    justify-content: right;
+    margin-right: 100px !important;
+    margin-left: 5px !important;
+    float: left;
 }
 
 #message {

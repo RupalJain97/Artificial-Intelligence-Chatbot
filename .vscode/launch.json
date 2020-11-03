@@ -5,33 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Chrome",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "openOnSessionStart",
+            "name": "nodemon",
+            "program": "${workspaceFolder}/app.js",
             "request": "launch",
-            "type": "pwa-chrome",
-            "url": "http://localhost:5500",
-            "webRoot": "${workspaceFolder}"
-        },
-        {
-            "name": "Launch via NPM",
-            "request": "launch",
-            "runtimeArgs": [
-                "run-script",
-                "debug"
-            ],
-            "runtimeExecutable": "npm",
+            "restart": true,
+            "runtimeExecutable": "nodemon",
             "skipFiles": [
                 "<node_internals>/**"
             ],
             "type": "pwa-node"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Launch Program",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}\\app.js"
         }
     ]
 }
