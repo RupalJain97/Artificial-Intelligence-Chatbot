@@ -5,8 +5,10 @@ var app = express();
 var server = require('http').createServer(app);
 var io = require('socket.io')(server);
 
-server.listen(5500, function() {
-    console.log("Listening server at port: " + 5500);
+const port = process.env.PORT || 5500;
+server.listen(port, () => {
+    console.log("Listening server at port: " + port);
+    console.log("open : https://localhost:" + port);
 });
 
 app.use(express.static("."));
@@ -42,12 +44,12 @@ async function runSample(sessionPath, sessionClient, question) {
     const responses = await sessionClient.detectIntent(request);
     console.log('Detected intent');
     const result = responses[0].queryResult;
-    console.log(`  Query: ${result.queryText}`);
-    console.log(`  Response: ${result.fulfillmentText}`);
+    console.log(`Query: $ { result.queryText }`);
+    console.log(`Response: $ { result.fulfillmentText }`);
     if (result.intent) {
-        console.log(`  Intent: ${result.intent.displayName}`);
+        console.log(`Intent: $ { result.intent.displayName }`);
     } else {
-        console.log(`  No intent matched.`);
+        console.log(`No intent matched.`);
     }
     return result;
 }
@@ -55,6 +57,8 @@ async function runSample(sessionPath, sessionClient, question) {
 // To recieve events on server side
 io.on('connection', function(socket) {
     console.log('Socket connected...');
+
+    console.log(process.env);
 
     // A unique identifier for the given session
     const sessionId = uuid.v4();

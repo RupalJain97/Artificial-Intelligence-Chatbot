@@ -19,6 +19,7 @@
     },
     "homepage": "https://github.com/RupalJain97/Student-Support-System#readme",
     "dependencies": {
+        "@types/dialogflow": "^4.0.4",
         "all": "0.0.0",
         "bootstrap": "^4.0.0-alpha.6",
         "dialogflow": "^1.2.0",
@@ -26,10 +27,11 @@
         "node": "^15.0.1",
         "nodemailer": "^6.4.14",
         "nodemon": "^2.0.6",
-        "raphael": "^2.3.0",
         "require": "^2.4.20",
         "socket.io": "^2.3.0",
-        "uglify-js": "^3.11.4",
         "uuid": "^8.3.1"
+    },
+    "engines": {
+        "node": "12.19.0"
     }
 }

@@ -326,7 +326,8 @@ p {
     font-style: italic;
     font-weight: 500;
     font-size: small;
-    width: fit-content;
+    /* width: fit-content; */
+    display: inline;
     border: rgb(216, 219, 218) 2px solid;
     border-radius: 5px 1px 5px 5px;
     padding: 5px;
