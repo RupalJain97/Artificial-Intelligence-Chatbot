@@ -6,6 +6,7 @@
 	],
 	"settings": {
 		"liveServer.settings.CustomBrowser": "chrome",
-		"debug.javascript.autoAttachFilter": "smart"
+		"debug.javascript.autoAttachFilter": "smart",
+		"liveServer.settings.port": 5501
 	}
 }

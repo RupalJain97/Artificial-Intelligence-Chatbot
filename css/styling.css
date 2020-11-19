@@ -16,7 +16,7 @@ html {
 }
 
 .navbar-dark .navbar-brand {
-    color: rgb(216, 219, 218) !important;
+    color: rgb(216, 219, 218);
     font-family: cursive;
 }
 

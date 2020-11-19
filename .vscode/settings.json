@@ -1,4 +1,5 @@
 {
     "editor.autoIndent": "brackets",
-    "html.format.contentUnformatted": "pre,code,textarea"
+    "html.format.contentUnformatted": "pre,code,textarea",
+    "liveServer.settings.port": 5501
 }
