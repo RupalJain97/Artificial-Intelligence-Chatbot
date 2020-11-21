@@ -18,20 +18,19 @@
         "url": "https://github.com/RupalJain97/Student-Support-System/issues"
     },
     "homepage": "https://github.com/RupalJain97/Student-Support-System#readme",
+    "engines": {
+        "node": "14.15.1"
+    },
     "dependencies": {
-        "@types/dialogflow": "^4.0.4",
         "all": "0.0.0",
         "bootstrap": "^4.0.0-alpha.6",
         "dialogflow": "^1.2.0",
         "express": "^4.17.1",
-        "node": "^15.0.1",
         "nodemailer": "^6.4.14",
         "nodemon": "^2.0.6",
         "require": "^2.4.20",
         "socket.io": "^2.3.0",
         "uuid": "^8.3.1"
-    },
-    "engines": {
-        "node": "12.19.0"
     }
+
 }
