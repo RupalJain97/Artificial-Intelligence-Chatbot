@@ -1,3 +1,6 @@
+// Set environment variable to confidential  json file
+// $env:GOOGLE_APPLICATION_CREDENTIALS="D:\Projects and Programs\Student-Support-System\student-support-system-296519-beac362daa52.json"
+
 var express = require('express');
 var app = express();
 var server = require('http').createServer(app);
@@ -43,7 +46,6 @@ async function runSample(sessionPath, sessionClient, question) {
     // Send request and log result
     const responses = await sessionClient.detectIntent(request);
     console.log('Detected intent');
-    // console.log(responses);
     const result = responses[0].queryResult;
     console.log(`  Query: ${result.queryText}`);
 
@@ -54,39 +56,41 @@ async function runSample(sessionPath, sessionClient, question) {
         console.log(`  No intent matched.`);
     }
 
-
-    if (result.fulfillmentMessages.length == 1) {
-        var ans = result.fulfillmentMessages[0].text.text;
-    } else {
-        var ans = "";
-        for (var i = 0; i < result.fulfillmentMessages.length; i++) {
-            ans += ` ${i+1}.${result.fulfillmentMessages[i].text.text} \n `;
-        }
-    }
-    // console.log(ans);
-    return ans;
+    return result;
 }
 
 // To recieve events on server side
 io.on('connection', function(socket) {
     console.log('Socket connected...');
 
-    // console.log(process.env);
-
     // A unique identifier for the given session
     const sessionId = uuid.v4();
 
     // Create a new session
     const sessionClient = new dialogflow.SessionsClient();
-    const sessionPath = sessionClient.sessionPath('student-support-system-294109', sessionId);
+    const sessionPath = sessionClient.sessionPath('student-support-system-296519', sessionId);
 
     socket.on('chat', async function(data) {
         var reply = await runSample(sessionPath, sessionClient, data.message);
-        console.log("Response: " + JSON.stringify(reply));
+        // console.log("Response: " + JSON.stringify(reply));
 
+        if (reply.fulfillmentMessages.length == 1) {
+            var ans = reply.fulfillmentMessages[0].text.text;
+        } else {
+            var ans = "";
+            if (reply.intent.displayName == "courses" || reply.intent.displayName == "occupation" || reply.intent.displayName == "colleges") {
+                for (var i = 0; i < reply.fulfillmentMessages.length; i++) {
+                    ans += ` ${i+1}. ${reply.fulfillmentMessages[i].text.text} <br> `;
+                }
+            } else {
+                for (var i = 0; i < reply.fulfillmentMessages.length; i++) {
+                    ans += ` ${reply.fulfillmentMessages[i].text.text} <br> `;
+                }
+            }
+        }
+        console.log("Response: " + ans);
         var response = {
-            // message: reply.fulfillmentText
-            message: JSON.stringify(reply)
+            message: ans
         }
         socket.emit('chat', response);
 
