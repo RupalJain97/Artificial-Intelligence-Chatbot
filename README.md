@@ -38,7 +38,7 @@ Here is the glimpse of how the student can chat with *Cary*, the Assistant.
 
 The *Career Counselling* is a website resource for students that can help choose them their desired stream after 10th and 12th. It contains a lot of information that will guide them how they can achieve their dreams by helping them choose right stream after 10th class. 
 
-Students can chat with our online assistant 'Cary' using a chatbot just by saying 'Hi' and she will help you with your questions. Students can also talk to our cousellors by asking Cary to fix their meeting with our counsellors and you will get confirmation on your mails.
+Students can chat with our online assistant *'Cary'* using a chatbot just by saying 'Hi' and she will help you with your questions. Students can also talk to our cousellors by asking Cary to fix their meeting with our counsellors and you will get confirmation on your mails.
 
 
 ## Technologies and Platforms
