@@ -62,6 +62,10 @@ async function runSample(sessionPath, sessionClient, question) {
 // To recieve events on server side
 io.on('connection', function(socket) {
     console.log('Socket connected...');
+    var welcome = {
+        message: 'Hello, How can I help you?'
+    }
+    socket.emit('chat', welcome);
 
     // A unique identifier for the given session
     const sessionId = uuid.v4();

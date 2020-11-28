@@ -13,13 +13,15 @@ function popup_func() {
 
 var message = document.getElementById('handle');
 var output = document.getElementById('output');
-var btn = document.getElementById('submit');
 var typing = document.getElementById('typing');
 
 // Functionality of submit button in Chatbot
 function messageSubmit() {
     output.innerHTML += '<p id="user_msg">' + message.value + '</p>';
     output.scrollTop = output.scrollHeight;
+
+    typing.style.display = 'block';
+    typing.innerHTML = ' Typing... ';
 
     socket.emit('chat', {
         message: message.value
@@ -32,6 +34,7 @@ var socket = io.connect('http://localhost:5500');
 
 // To Output Data on Chatbot
 socket.on('chat', function(data) {
+    typing.style.display = 'none';
     output.innerHTML += '<p id="bot_msg">' + data.message + '</p>';
     output.scrollTop = output.scrollHeight;
 });

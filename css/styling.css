@@ -284,7 +284,6 @@ p {
 
 .container {
     padding: 0px;
-    /* height: 350px; */
 }
 
 .col-12 {
@@ -300,19 +299,22 @@ p {
     width: 100%;
     height: 290px;
     background-color: rgba(177, 180, 179, 0.878);
-    /* overflow-y: auto; */
     overflow-x: auto;
     border-left: rgb(10, 169, 243) 1px solid;
     border-right: rgb(10, 169, 243) 1px solid;
 }
 
 #typing {
-    padding: 2px;
+    padding-left: 5px !important;
+    padding-bottom: 5px !important;
     margin: 0px;
-    height: 15px;
     background-color: rgb(177, 180, 179, 0.878);
     border-left: rgb(10, 169, 243) 1px solid;
     border-right: rgb(10, 169, 243) 1px solid;
+    display: none;
+    font-weight: 500;
+    font-style: italic;
+    font-size: small;
 }
 
 #typingMsg {
@@ -332,7 +334,7 @@ p {
     margin-bottom: 3px !important;
     margin-top: 3px !important;
     margin-right: 4px !important;
-    /* margin-left: 100% !important; */
+    margin-left: 50px !important;
     float: right;
     background-color: rgb(114, 116, 115);
     color: rgb(216, 219, 218);
@@ -351,8 +353,8 @@ p {
     margin-left: 4px !important;
     float: left;
     background-color: rgb(114, 116, 115);
-    /* color: rgb(216, 219, 218); */
     color: rgb(181, 232, 255);
+    text-align: left;
 }
 
 #message {
