@@ -44,11 +44,11 @@ Here is the glimpse of how the student can chat with *Cary*, the Assistant.
 
 ## Technologies and Platforms
 
-* Node.js
-* JavaScript
 * [Dialogflow](https://dialogflow.cloud.google.com/) (ML)
 * [Firebase](https://console.firebase.google.com/u/0/) (Database)
 * [Goocle Cloud Platform](https://console.cloud.google.com/)
+* Node.js
+* JavaScript
 
 
 ## How to use this repository
@@ -59,7 +59,7 @@ Follow below steps to make a working model of chatbot application.
 Firstly, copy this repository to your local directory by executing:
 
 ```
-git clone https://github.com/RupalJain97/Student-Support-System.git
+git clone https://github.com/RupalJain97/Artificial-Intelligence-Chatbot.git
 ```
 
 ### Google Cloud Platform (GCP) setup
