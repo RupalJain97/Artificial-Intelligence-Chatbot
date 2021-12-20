@@ -1,4 +1,4 @@
-# Student Support System
+# Student Support System - Artificial Intelligence Chatbot
 
 #### Discover your career with our career counsellors
 
